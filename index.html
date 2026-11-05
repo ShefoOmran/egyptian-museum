@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>المتحف المصري الكبير | أكبر متحف في العالم لحضارة واحدة</title>
+<meta name="description" content="كل ما تريد معرفته عن المتحف المصري الكبير بالجيزة: قصته وأهميته وقاعاته ومجموعة توت عنخ آمون ومركب خوفو وصور من داخله ومن زواره.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sand:#f6efe0; --sand-2:#ece0c6; --ink:#2a2118; --muted:#6b5d4a;
+  --gold:#b8862b; --gold-2:#d9a940; --lapis:#1f3a5f; --lapis-2:#2c5282;
+  --card:#fffaf0; --line:#e2d4b4; --radius:16px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Cairo',system-ui,sans-serif;background:var(--sand);color:var(--ink);line-height:1.9;font-size:17px}
+h1,h2,h3{font-family:'Amiri','Cairo',serif;line-height:1.4}
+a{color:var(--lapis-2)}
+img{max-width:100%;display:block}
+
+nav{position:sticky;top:0;z-index:50;background:rgba(31,58,95,.96);backdrop-filter:blur(6px);box-shadow:0 2px 12px rgba(0,0,0,.2)}
+nav .wrap{max-width:1150px;margin:auto;display:flex;gap:6px;align-items:center;padding:8px 16px;overflow-x:auto;white-space:nowrap}
+nav b{font-family:'Amiri',serif;color:var(--gold-2);font-size:1.15rem;margin-inline-end:14px}
+nav a{color:#f3ead6;text-decoration:none;padding:4px 12px;border-radius:999px;font-size:.92rem;font-weight:600}
+nav a:hover{background:rgba(255,255,255,.14)}
+nav a.other{border:1px solid var(--gold-2);color:var(--gold-2)}
+
+.hero{position:relative;min-height:80vh;display:grid;place-items:center;text-align:center;color:#fff;
+  background:linear-gradient(135deg,#1f3a5f,#a8741f 70%,#d9a940);overflow:hidden}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,12,6,.4),rgba(15,12,6,.78))}
+.hero .inner{position:relative;z-index:2;padding:40px 20px;max-width:880px}
+.hero .tag{display:inline-block;border:1px solid var(--gold-2);color:var(--gold-2);padding:2px 16px;border-radius:999px;font-size:.9rem;margin-bottom:16px}
+.hero h1{font-size:clamp(2.4rem,7vw,4.6rem);font-weight:700;text-shadow:0 3px 20px rgba(0,0,0,.6)}
+.hero p{font-size:1.2rem;margin-top:14px;color:#f5ecd6}
+.btn{display:inline-block;margin-top:26px;background:var(--gold);color:#fff;text-decoration:none;padding:10px 30px;border-radius:999px;font-weight:700;transition:.2s}
+.btn:hover{background:var(--gold-2);transform:translateY(-2px)}
+
+section{padding:70px 18px}
+.wrap{max-width:1150px;margin:auto}
+.alt{background:var(--sand-2)}
+.title{text-align:center;margin-bottom:38px}
+.title h2{font-size:clamp(1.9rem,4.5vw,2.8rem);color:var(--lapis)}
+.title .bar{width:90px;height:4px;background:linear-gradient(90deg,var(--gold),var(--gold-2));margin:10px auto 0;border-radius:4px}
+.title p{color:var(--muted);margin-top:10px}
+.lead{max-width:860px;margin:0 auto 18px;text-align:justify}
+
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:16px;margin-top:26px}
+.fact{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px 16px;text-align:center;box-shadow:0 4px 14px rgba(120,90,30,.08)}
+.fact .n{font-family:'Amiri',serif;font-size:2.1rem;font-weight:700;color:var(--gold);line-height:1.2}
+.fact .l{color:var(--muted);font-size:.95rem}
+
+.timeline{position:relative;max-width:820px;margin:auto;padding-inline-start:34px}
+.timeline::before{content:"";position:absolute;inset-block:0;inset-inline-start:10px;width:3px;background:var(--gold)}
+.ev{position:relative;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 20px;margin-bottom:18px}
+.ev::before{content:"";position:absolute;inset-inline-start:-31px;top:22px;width:16px;height:16px;background:var(--lapis);border:3px solid var(--gold-2);border-radius:50%}
+.ev b{font-family:'Amiri',serif;color:var(--gold);font-size:1.3rem}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:0 4px 14px rgba(120,90,30,.08)}
+.card .ic{font-size:2rem}
+.card h3{color:var(--lapis);font-size:1.4rem;margin:6px 0}
+.card p{color:#4a3f31;font-size:.98rem}
+
+.halls{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;max-width:980px;margin:0 auto}
+.hall{background:var(--lapis);color:#f3ead6;border-radius:var(--radius);padding:18px 20px;border-top:5px solid var(--gold-2)}
+.hall b{font-family:'Amiri',serif;color:var(--gold-2);font-size:1.25rem;display:block}
+.hall.t{background:linear-gradient(135deg,#8a5a1a,#c8952f);color:#fff;border-top-color:#fff3c9}
+.hall.t b{color:#fff3c9}
+
+.callout{max-width:900px;margin:30px auto 0;background:#fff4d6;border:1px solid var(--gold-2);border-inline-start:6px solid var(--gold);border-radius:var(--radius);padding:20px 24px}
+.callout h3{color:#7a5314;font-size:1.35rem}
+
+table{width:100%;max-width:900px;margin:auto;border-collapse:collapse;background:var(--card);border-radius:var(--radius);overflow:hidden;box-shadow:0 4px 14px rgba(120,90,30,.1)}
+th,td{padding:12px 16px;text-align:right;border-bottom:1px solid var(--line);font-size:.98rem}
+th{background:var(--lapis);color:#fff;font-family:'Amiri',serif;font-size:1.15rem}
+td:first-child{font-weight:700;color:var(--lapis)}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+figure{position:relative;border-radius:14px;overflow:hidden;background:var(--sand-2);cursor:zoom-in;aspect-ratio:4/3;box-shadow:0 4px 14px rgba(0,0,0,.12)}
+figure img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+figure:hover img{transform:scale(1.06)}
+figure figcaption{position:absolute;inset-inline:0;bottom:0;padding:26px 12px 10px;color:#fff;font-size:.9rem;font-weight:600;background:linear-gradient(0deg,rgba(0,0,0,.8),transparent)}
+.sub{font-family:'Amiri',serif;font-size:1.6rem;color:var(--lapis);margin:34px 0 14px}
+.sub.first{margin-top:0}
+
+.tips{list-style:none;max-width:820px;margin:auto;display:grid;gap:12px}
+.tips li{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px 14px 14px;display:flex;gap:12px;align-items:flex-start}
+.tips li span{font-size:1.4rem}
+
+.credits{font-size:.88rem;color:var(--muted);max-width:900px;margin:auto;text-align:center}
+footer{background:var(--lapis);color:#e8dfc8;text-align:center;padding:30px 18px;font-size:.95rem}
+footer b{color:var(--gold-2);font-family:'Amiri',serif;font-size:1.3rem}
+footer a{color:var(--gold-2)}
+
+#lb{position:fixed;inset:0;background:rgba(10,8,5,.94);display:none;z-index:100;place-items:center;padding:20px}
+#lb.on{display:grid}
+#lb img{max-height:80vh;max-width:96vw;border-radius:10px;object-fit:contain;margin:auto}
+#lb p{color:#f3ead6;text-align:center;margin-top:12px;font-size:.95rem}
+#lb a{color:var(--gold-2);font-size:.9rem}
+#lb button{position:absolute;top:16px;inset-inline-start:20px;background:none;border:0;color:#fff;font-size:2.4rem;cursor:pointer}
+.reveal{opacity:0;transform:translateY(22px);transition:.7s}
+.reveal.in{opacity:1;transform:none}
+@media(max-width:600px){body{font-size:16px}section{padding:50px 14px}th,td{padding:10px}}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <b>𓂀 المتحف المصري الكبير</b>
+  <a href="#about">نبذة</a><a href="#story">القصة</a><a href="#importance">الأهمية</a>
+  <a href="#halls">القاعات</a><a href="#tut">توت عنخ آمون</a><a href="#gallery">الصور</a><a href="#visit">زيارتك</a>
+  <a class="other" href="index.html">المتحف المصري بالتحرير</a>
+</div></nav>
+
+<header class="hero">
+  <img class="bg" id="heroImg" alt="المتحف المصري الكبير بالجيزة">
+  <div class="inner">
+    <span class="tag">الجيزة · بجوار الأهرامات · افتُتح في نوفمبر 2025</span>
+    <h1>المتحف المصري الكبير</h1>
+    <p>أكبر متحف في العالم مخصص لحضارة واحدة، على بعد كيلومترين فقط من أهرامات الجيزة</p>
+    <a class="btn" href="#about">ابدأ الجولة</a>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <div class="title"><h2>نبذة عن المتحف</h2><div class="bar"></div></div>
+    <p class="lead">المتحف المصري الكبير هو متحف أثري وطني يقع في الجيزة على بعد نحو كيلومترين من مجمع أهرامات الجيزة، ويُعد أكبر متحف في العالم مخصص لحضارة واحدة. يضم أكثر من 100 ألف قطعة أثرية تغطي تاريخ مصر من عصور ما قبل الأسرات حتى العصر الروماني.</p>
+    <p class="lead">أُعلن عن المشروع عام 1992، ووُضع حجر أساسه عام 2002، وبدأ التنفيذ الفعلي عام 2005. وبعد تأجيلات عديدة وتشغيل تجريبي بدأ في أكتوبر 2024، أُقيم حفل الافتتاح الرسمي في 1 نوفمبر 2025، وفُتح أمام الجمهور في 4 نوفمبر، وهو اليوم الذي يوافق الذكرى الـ103 لاكتشاف مقبرة توت عنخ آمون.</p>
+    <div class="facts">
+      <div class="fact"><div class="n">+100 ألف</div><div class="l">قطعة أثرية في المجموعة</div></div>
+      <div class="fact"><div class="n">500 ألف م²</div><div class="l">المساحة الإجمالية للمجمع</div></div>
+      <div class="fact"><div class="n">12 قاعة</div><div class="l">قاعات عرض رئيسية دائمة</div></div>
+      <div class="fact"><div class="n">5,398</div><div class="l">قطعة من كنوز توت عنخ آمون</div></div>
+      <div class="fact"><div class="n">11 مترًا</div><div class="l">ارتفاع تمثال رمسيس الثاني (83 طنًا)</div></div>
+      <div class="fact"><div class="n">2 كم</div><div class="l">المسافة إلى أهرامات الجيزة</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="story" class="alt">
+  <div class="wrap">
+    <div class="title"><h2>قصة المتحف</h2><div class="bar"></div><p>عشرون عامًا من الحلم والتنفيذ</p></div>
+    <div class="timeline">
+      <div class="ev reveal"><b>1992</b><br>إطلاق الفكرة رسميًا لبناء متحف جديد يستوعب مجموعات أكبر ويخفف الضغط عن المتحف المصري بالتحرير.</div>
+      <div class="ev reveal"><b>2002</b><br>وضع حجر الأساس وإعلان مسابقة معمارية دولية شارك فيها 1,557 تصميمًا من 82 دولة، وفاز بها مكتب «هينيجان بينج» الأيرلندي.</div>
+      <div class="ev reveal"><b>2005</b><br>بدء أعمال الإنشاء الفعلية، ونفذتها شركتا «أوراسكوم» المصرية و«بيسكس» البلجيكية.</div>
+      <div class="ev reveal"><b>2018</b><br>نقل تمثال رمسيس الثاني الضخم إلى بهو المتحف ليكون أول قطعة تُنصب فيه.</div>
+      <div class="ev reveal"><b>2021</b><br>نقل مركب خوفو الثاني من موقعه القديم قرب الهرم إلى متحف المراكب الجديد.</div>
+      <div class="ev reveal"><b>أكتوبر 2024</b><br>تشغيل تجريبي لعدد من القاعات أمام الزوار.</div>
+      <div class="ev reveal"><b>1 نوفمبر 2025</b><br>حفل الافتتاح الرسمي بحضور رئيس الجمهورية وعدد من الملوك والرؤساء، ثم فتح أبواب المتحف للجمهور في 4 نوفمبر.</div>
+    </div>
+  </div>
+</section>
+
+<section id="importance">
+  <div class="wrap">
+    <div class="title"><h2>لماذا هو مهم؟</h2><div class="bar"></div></div>
+    <div class="cards">
+      <div class="card reveal"><div class="ic">👑</div><h3>الكنز الكامل لتوت عنخ آمون</h3><p>لأول مرة تُعرض كل مقتنيات المقبرة، وعددها 5,398 قطعة، في مكان واحد، بعد أن كانت موزعة بين أكثر من مكان.</p></div>
+      <div class="card reveal"><div class="ic">🌍</div><h3>الأكبر من نوعه</h3><p>هو أكبر متحف في العالم مخصص لحضارة واحدة، وتبلغ مساحته نحو ضعف مساحة متحف اللوفر تقريبًا.</p></div>
+      <div class="card reveal"><div class="ic">🔭</div><h3>إطلالة على الأهرامات</h3><p>صُمم المبنى بحيث تظهر أهرامات الجيزة من داخله، وتتماشى جدرانه مع محور هرمي خوفو ومنكاورع.</p></div>
+      <div class="card reveal"><div class="ic">🛠️</div><h3>أكبر مركز ترميم في المنطقة</h3><p>يضم مركزًا للترميم يُعد من أكبر مراكز ترميم الآثار في الشرق الأوسط، به 19 معملًا متخصصًا.</p></div>
+      <div class="card reveal"><div class="ic">📈</div><h3>دفعة للسياحة والاقتصاد</h3><p>يُنتظر أن يجذب ملايين الزوار سنويًا، وقد استقبل أكثر من 18 ألف زائر في أول يوم بعد افتتاحه للجمهور.</p></div>
+      <div class="card reveal"><div class="ic">🎒</div><h3>مكان للتعلم والأطفال</h3><p>يضم متحفًا للطفل للأعمار من 6 إلى 12 سنة، ومركزًا للمؤتمرات، وورشًا للحرف والفنون التقليدية.</p></div>
+    </div>
+    <div class="callout">
+      <h3>🏛️ وماذا عن المتحف المصري بالتحرير؟</h3>
+      <p>لا يحلّ المتحف الكبير محل المتحف المصري بميدان التحرير، فالاثنان يكمّل أحدهما الآخر. انتقلت مجموعة توت عنخ آمون من التحرير إلى الجيزة، بينما يبقى متحف التحرير مفتوحًا بآلاف القطع وتجربة العرض الكلاسيكية. <a href="index.html">اقرأ عن المتحف المصري بالتحرير</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section id="halls" class="alt">
+  <div class="wrap">
+    <div class="title"><h2>ماذا يوجد داخل المتحف؟</h2><div class="bar"></div><p>رحلة تبدأ بتمثال رمسيس وتصعد عبر الدرج العظيم إلى القاعات</p></div>
+
+    <div class="cards" style="margin-bottom:36px">
+      <div class="card"><div class="ic">🗿</div><h3>البهو الأعظم</h3><p>مساحته نحو 10 آلاف م²، بسقف زجاجي وواجهة شفافة. يستقبلك فيه تمثال رمسيس الثاني من الجرانيت الأحمر، وطوله 11 مترًا ووزنه 83 طنًا وعمره نحو 3200 عام، إلى جانب عشرات القطع الضخمة من عصور مختلفة.</p></div>
+      <div class="card"><div class="ic">🪜</div><h3>الدرج العظيم</h3><p>درج بارتفاع ستة طوابق (نحو 50 مترًا) يعمل كمعرض انتقالي به أكثر من 60 قطعة مقسمة إلى أربعة أقسام: الصورة الملكية، والبيوت الإلهية، والآلهة والملوك، والقسم الجنائزي. وفي أعلاه نافذة كبيرة تطل على الأهرامات.</p></div>
+      <div class="card"><div class="ic">⛵</div><h3>متحف مراكب خوفو</h3><p>مبنى منفصل يعرض مركبي الملك خوفو، وهما من أقدم السفن الخشبية المكتشفة في العالم ويعود عمرهما إلى نحو 4600 عام.</p></div>
+    </div>
+
+    <h3 class="sub first" style="text-align:center">القاعات الاثنتا عشرة مرتبة زمنيًا</h3>
+    <div class="halls">
+      <div class="hall"><b>القاعات 1 إلى 3</b>ما قبل التاريخ وعصر ما قبل الأسرات وبداية الأسرات والدولة القديمة وعصر الانتقال الأول.</div>
+      <div class="hall"><b>القاعات 4 إلى 6</b>الدولة الوسطى وعصر الانتقال الثاني.</div>
+      <div class="hall"><b>القاعات 7 إلى 9</b>الدولة الحديثة، وتضم تماثيل ضخمة لأمنحتب الثالث ورمسيس الثاني وحتشبسوت.</div>
+      <div class="hall"><b>القاعات 10 إلى 12</b>عصر الانتقال الثالث والعصر المتأخر والعصرين اليوناني والروماني.</div>
+    </div>
+    <p class="lead" style="margin-top:22px;text-align:center">ومن القطع التي تُعرض ضمن المجموعة مقتنيات الملكة حتب حرس والدة الملك خوفو، ومجموعة يويا وتويا والدي الملكة تي، وأقدم مجوهرات ملكية معروفة من مقبرة الملك جر.</p>
+  </div>
+</section>
+
+<section id="tut">
+  <div class="wrap">
+    <div class="title"><h2>قاعتا توت عنخ آمون</h2><div class="bar"></div><p>أروع ما في المتحف</p></div>
+    <p class="lead">تخصص قاعتان من القاعات الاثنتي عشرة للملك توت عنخ آمون فقط، ومساحتهما معًا نحو 7 آلاف م². ويُعرض فيهما لأول مرة منذ اكتشاف المقبرة عام 1922 الكنز كاملًا، وفي مقدمته القناع الذهبي الشهير.</p>
+    <div class="cards">
+      <div class="card"><div class="ic">🎭</div><h3>القناع الذهبي</h3><p>قناع من الذهب الخالص مطعّم باللازورد والفيروز والعقيق والزجاج الملون، وهو أشهر قطعة أثرية في العالم.</p></div>
+      <div class="card"><div class="ic">⚱️</div><h3>التوابيت المتداخلة</h3><p>ثلاثة توابيت متداخلة، أحدها من الذهب الخالص ويزن نحو 110 كيلوجرامات، واثنان من الخشب المطلي بالذهب.</p></div>
+      <div class="card"><div class="ic">🪑</div><h3>العرش الذهبي</h3><p>مقعد مغطى بالذهب والفضة تزينه مشاهد للملك وزوجته عنخ إس إن آمون.</p></div>
+      <div class="card"><div class="ic">🏹</div><h3>الأسلحة والأثاث والعربات</h3><p>خناجر وأقواس وأسرّة وكراسٍ وأدوات للطعام وعربات حربية، إضافة إلى تماثيل الأوشابتي والتمائم والحلي.</p></div>
+    </div>
+    <div class="callout">
+      <h3>ملحوظة</h3>
+      <p>مومياء توت عنخ آمون نفسها باقية في مقبرته بوادي الملوك ولم تُنقل إلى المتحف.</p>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="title"><h2>المتحف المصري الكبير والمتحف المصري بالتحرير</h2><div class="bar"></div></div>
+    <table>
+      <tr><th></th><th>المتحف المصري الكبير</th><th>المتحف المصري بالتحرير</th></tr>
+      <tr><td>الموقع</td><td>الجيزة قرب الأهرامات</td><td>ميدان التحرير بوسط القاهرة</td></tr>
+      <tr><td>الافتتاح</td><td>2025</td><td>1902</td></tr>
+      <tr><td>الطابع</td><td>حديث، عرض زمني منظم بتقنيات حديثة</td><td>كلاسيكي، مبنى تاريخي عريق</td></tr>
+      <tr><td>أبرز ما فيه</td><td>كنز توت عنخ آمون كاملًا، رمسيس الثاني، الدرج العظيم، مركب خوفو</td><td>لوحة نارمر، تماثيل الملوك، البرديات، آلاف القطع الأثرية</td></tr>
+      <tr><td>مدة الزيارة المقترحة</td><td>نصف يوم تقريبًا</td><td>من ساعتين إلى ثلاث ساعات</td></tr>
+    </table>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <div class="title"><h2>جولة بالصور</h2><div class="bar"></div><p>المبنى والقاعات والزوار</p></div>
+
+    <h3 class="sub first" id="h-exterior">المبنى من الخارج</h3>
+    <div class="grid" id="g-exterior"></div>
+
+    <h3 class="sub" id="h-atrium">البهو والدرج العظيم</h3>
+    <div class="grid" id="g-atrium"></div>
+
+    <h3 class="sub" id="h-tut">كنوز توت عنخ آمون</h3>
+    <div class="grid" id="g-tut"></div>
+
+    <h3 class="sub" id="h-halls">القاعات والمعروضات</h3>
+    <div class="grid" id="g-halls"></div>
+
+    <h3 class="sub" id="h-visitors">الزوار داخل المتحف</h3>
+    <div class="grid" id="g-visitors"></div>
+  </div>
+</section>
+
+<section id="visit" class="alt">
+  <div class="wrap">
+    <div class="title"><h2>نصائح لزيارة ناجحة</h2><div class="bar"></div></div>
+    <ul class="tips">
+      <li><span>🎟️</span><div>احجز تذكرتك إلكترونيًا من الموقع الرسمي <a href="https://visit-gem.com" target="_blank" rel="noopener">visit-gem.com</a> وراجع مواعيد العمل وأسعار التذاكر قبل الزيارة لأنها قد تتغير.</div></li>
+      <li><span>⏱️</span><div>خصص نصف يوم على الأقل، وثلاث إلى أربع ساعات إن أردت رؤية الدرج العظيم وقاعتي توت عنخ آمون ومتحف المراكب.</div></li>
+      <li><span>🌅</span><div>الأفضل الذهاب في أول مواعيد اليوم لتجنب الزحام، والتقاط صور الدرج العظيم والنافذة المطلة على الأهرامات بإضاءة هادئة.</div></li>
+      <li><span>🚗</span><div>المتحف على طريق القاهرة الإسكندرية الصحراوي قرب الأهرامات، وتتوفر سيارات الأجرة وتطبيقات النقل. وبحسب ويكيبيديا فإن محطة مترو الخط الرابع «الأهرام» لا تزال قيد الإنشاء.</div></li>
+      <li><span>👟</span><div>ارتدِ حذاءً مريحًا فالمساحة كبيرة، وخذ فترات راحة بين القاعات.</div></li>
+      <li><span>🏛️</span><div>اجمع بين المتحفين: ابدأ بالمتحف المصري بالتحرير لتقرأ قصة علم المصريات، ثم اختم بالمتحف الكبير.</div></li>
+    </ul>
+  </div>
+</section>
+
+<section style="padding:40px 18px">
+  <p class="credits">الصور تُحمّل مباشرة من موقع ويكيميديا كومنز (Wikimedia Commons) وهي منشورة بتراخيص مفتوحة، وغالبًا CC&nbsp;BY-SA. اضغط على أي صورة لتكبيرها وستجد اسم المصوّر والترخيص ورابط «المصدر» لصفحة الصورة الأصلية. المعلومات للتعريف العام، ويُرجى الرجوع للموقع الرسمي للمتحف للتفاصيل المحدّثة.</p>
+</section>
+
+<footer>
+  <b>المتحف المصري الكبير</b><br>
+  صفحة تعريفية عن أكبر متحف أثري في العالم · <a href="index.html">المتحف المصري بالتحرير</a>
+</footer>
+
+<div id="lb" role="dialog" aria-modal="true">
+  <button id="lbx" aria-label="إغلاق">×</button>
+  <div style="text-align:center"><img id="lbi" alt=""><p><span id="lbc"></span><br><small id="lbm"></small> <a id="lbs" target="_blank" rel="noopener">المصدر</a></p></div>
+</div>
+
+<script>
+const FP = "https://commons.wikimedia.org/wiki/Special:FilePath/";
+const U = (n, w) => FP + encodeURIComponent(n.replace(/ /g, "_")) + "?width=" + w;
+const PAGE = n => "https://commons.wikimedia.org/wiki/File:" + encodeURIComponent(n.replace(/ /g, "_"));
+
+/* صور ثابتة (أسماء ملفات من ويكيميديا كومنز) + بحث تلقائي عن المزيد */
+const G = {
+  "g-exterior": {
+    max: 10, cap: "من المتحف المصري الكبير",
+    items: [
+      ["The Hanging Obelisk of Pharaoh Ramses II from in front of the GEM.jpg", "المسلة المعلقة أمام المتحف"],
+      ["View of Pyramids of Giza from Grand Egyptian Museum.jpg", "أهرامات الجيزة كما تُرى من المتحف"],
+      ["Hieroglyphic decorations on the walls of the Grand Egyptian Museum.jpg", "جدار الهيروغليفية بأسماء الملوك والملكات"],
+      ["Grand Egyptian Museum, Giza, GG, EGY (47902615061).jpg", "البوابة الرئيسية أثناء الإنشاء عام 2019"]
+    ],
+    queries: ["Grand Egyptian Museum facade", "Grand Egyptian Museum entrance exterior"]
+  },
+  "g-atrium": {
+    max: 12, cap: "البهو والدرج العظيم",
+    items: [
+      ["Grand Staircase (GEM).jpg", "الدرج العظيم"],
+      ["Grand Staircase in GEM.jpg", "تمثال الملكة حتشبسوت على الدرج العظيم"],
+      ["Grand Staircase in (GEM).jpg", "تماثيل المعبودات على الدرج العظيم"],
+      ["Temple fragment, Grand Staircase in Grand Egyptian Museum.jpg", "جزء من معبد على الدرج العظيم"],
+      ["Head of King Akhenaten, ca. 1353-1336 BCE; Grand Egyptian Museum, Grand Staircase.jpg", "رأس الملك أخناتون"]
+    ],
+    queries: ["Grand Egyptian Museum Ramesses II statue", "Grand Egyptian Museum grand hall atrium", "Grand Egyptian Museum staircase"]
+  },
+  "g-tut": {
+    max: 8, cap: "من قاعات توت عنخ آمون",
+    items: [
+      ["The sarcophagus of Pharaoh Tutankhamun inside the Grand Egyptian Museum.jpg", "تابوت الملك توت عنخ آمون"]
+    ],
+    queries: ["Grand Egyptian Museum Tutankhamun", "Tutankhamun gallery Grand Egyptian Museum throne chariot"]
+  },
+  "g-halls": {
+    max: 10, cap: "من القاعات الرئيسية",
+    items: [
+      ["GEM Khufus Boat front 2025.jpg", "مركب خوفو الشمسي"]
+    ],
+    queries: ["Grand Egyptian Museum statue gallery", "Grand Egyptian Museum Khufu boat", "Grand Egyptian Museum exhibit"]
+  },
+  "g-visitors": {
+    max: 10, cap: "زوار المتحف المصري الكبير",
+    items: [],
+    queries: ["Grand Egyptian Museum visitors", "Grand Egyptian Museum tourists crowd"]
+  }
+};
+
+const lb = document.getElementById("lb"), lbi = document.getElementById("lbi"),
+      lbc = document.getElementById("lbc"), lbs = document.getElementById("lbs"), lbm = document.getElementById("lbm");
+
+function open_(name, cap, credit){
+  lbi.src = U(name, 1600); lbi.alt = cap; lbc.textContent = cap;
+  lbm.textContent = credit || ""; lbs.href = PAGE(name);
+  lb.classList.add("on");
+}
+function close_(){ lb.classList.remove("on"); lbi.src = ""; }
+document.getElementById("lbx").onclick = close_;
+lb.addEventListener("click", e => { if (e.target === lb) close_(); });
+document.addEventListener("keydown", e => { if (e.key === "Escape") close_(); });
+
+const seen = new Set();
+
+function addFig(box, name, cap, credit){
+  if (seen.has(name)) return false;
+  seen.add(name);
+  const f = document.createElement("figure");
+  const img = document.createElement("img");
+  img.loading = "lazy"; img.alt = cap; img.src = U(name, 700);
+  img.onerror = () => { f.remove(); refresh(box); };
+  const c = document.createElement("figcaption"); c.textContent = cap;
+  f.append(img, c);
+  f.onclick = () => open_(name, cap, credit);
+  box.appendChild(f);
+  return true;
+}
+
+function refresh(box){
+  const h = document.getElementById("h-" + box.id.slice(2));
+  const empty = box.children.length === 0;
+  box.style.display = empty ? "none" : "";
+  if (h) h.style.display = empty ? "none" : "";
+}
+
+function strip(html){
+  if (!html) return "";
+  const d = new DOMParser().parseFromString(html, "text/html");
+  return (d.body.textContent || "").trim();
+}
+
+/* بحث في ويكيميديا كومنز عن صور المتحف الكبير */
+async function commonsSearch(q){
+  try {
+    const u = "https://commons.wikimedia.org/w/api.php?action=query&format=json&origin=*&generator=search&gsrnamespace=6&gsrlimit=40&gsrsearch="
+      + encodeURIComponent(q) + "&prop=imageinfo&iiprop=url|size|mime|extmetadata&iiurlwidth=800";
+    const r = await fetch(u);
+    if (!r.ok) return [];
+    const j = await r.json();
+    const pages = Object.values((j.query && j.query.pages) || {});
+    return pages.map(p => {
+      const ii = (p.imageinfo || [])[0];
+      if (!ii) return null;
+      const md = ii.extmetadata || {};
+      const title = p.title.replace(/^File:/, "");
+      const desc = strip(md.ImageDescription && md.ImageDescription.value);
+      return {
+        title, w: ii.width, mime: ii.mime,
+        relevant: /grand egyptian museum|\bGEM\b|المتحف المصري الكبير/i.test(title + " " + desc),
+        artist: strip(md.Artist && md.Artist.value).slice(0, 70),
+        lic: (md.LicenseShortName && md.LicenseShortName.value) || ""
+      };
+    }).filter(x => x && x.mime === "image/jpeg" && x.w >= 900 && x.relevant && !/logo|map|plan|diagram|poster|flag|under construction/i.test(x.title));
+  } catch (e) { return []; }
+}
+
+const hero = document.getElementById("heroImg");
+const heroQueue = ["Grand Staircase (GEM).jpg", "The Hanging Obelisk of Pharaoh Ramses II from in front of the GEM.jpg", "View of Pyramids of Giza from Grand Egyptian Museum.jpg"];
+let heroOk = false;
+function heroNext(){ const n = heroQueue.shift(); if (n) hero.src = U(n, 1600); else hero.style.display = "none"; }
+hero.onload = () => { heroOk = true; };
+hero.onerror = () => { if (!heroOk) heroNext(); };
+heroNext();
+
+(async function(){
+  for (const [id, cfg] of Object.entries(G)) {
+    const box = document.getElementById(id);
+    cfg.items.forEach(([n, c]) => addFig(box, n, c));
+    refresh(box);
+  }
+  await Promise.all(Object.entries(G).map(async ([id, cfg]) => {
+    const box = document.getElementById(id);
+    for (const q of cfg.queries) {
+      if (box.children.length >= cfg.max) break;
+      const res = await commonsSearch(q);
+      for (const r of res) {
+        if (box.children.length >= cfg.max) break;
+        const credit = [r.artist && ("تصوير: " + r.artist), r.lic].filter(Boolean).join(" · ");
+        addFig(box, r.title, cfg.cap, credit);
+      }
+    }
+    refresh(box);
+    if (id === "g-exterior" && !heroOk && box.firstChild) {
+      const im = box.querySelector("img"); if (im) { hero.style.display = ""; hero.src = im.src.replace(/width=\d+/, "width=1600"); }
+    }
+  }));
+})();
+
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), {threshold:.15});
+document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+</script>
+</body>
+</html>
